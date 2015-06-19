@@ -1,0 +1,4 @@
+.settings
+*.class
+Californium.properties
+**/data
