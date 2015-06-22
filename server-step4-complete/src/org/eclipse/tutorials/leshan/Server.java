@@ -35,7 +35,7 @@ public class Server {
 
             @Override
             public void cancelled(Observation observation) {
-                // TODO
+                //
             }
 
         });
