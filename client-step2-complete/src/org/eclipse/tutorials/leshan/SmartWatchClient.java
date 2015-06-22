@@ -68,6 +68,7 @@ public class SmartWatchClient {
                 @Override
                 public void run() {
                     currentTimestamp.getAndAdd(1000);
+                    // fireResourceChange(13);
                 }
             }, 1000, 1000);
         }

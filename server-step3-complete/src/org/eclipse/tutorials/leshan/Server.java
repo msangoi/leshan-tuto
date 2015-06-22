@@ -12,7 +12,7 @@ import org.eclipse.leshan.server.californium.impl.LeshanServer;
 import org.eclipse.leshan.server.client.Client;
 import org.eclipse.leshan.server.client.ClientRegistryListener;
 
-public class SmartWatchServer {
+public class Server {
 
     public static void main(String[] args) {
 
@@ -30,8 +30,7 @@ public class SmartWatchServer {
                 WriteRequest write = new WriteRequest("/3/0/13", new LwM2mResource(13, Value.newDateValue(new Date())),
                         ContentFormat.TEXT, true);
                 LwM2mResponse response = server.send(client, write);
-
-                System.out.println(response + " from client " + client.getEndpoint());
+                System.out.println("Write response: " + response);
             }
 
             @Override

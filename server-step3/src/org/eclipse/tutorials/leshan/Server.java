@@ -1,7 +1,7 @@
 package org.eclipse.tutorials.leshan;
 
 
-public class SmartWatchServer {
+public class Server {
 
     public static void main(String[] args) {
 
